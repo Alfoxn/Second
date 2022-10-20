@@ -15,7 +15,7 @@ public class Mebel {
         this.color = color;
     }
 
-    public void setName() {
+    public void setName(String name) {
         this.name = name;
     }
 
@@ -23,7 +23,7 @@ public class Mebel {
         return name;
     }
 
-    public void setFurnitur() {
+    public void setFurnitur(String furnitur) {
         this.furnitur = furnitur;
     }
 
@@ -31,7 +31,7 @@ public class Mebel {
         return furnitur;
     }
 
-    public void setColor() {
+    public void setColor(String color) {
         this.color = color;
     }
 
@@ -42,24 +42,6 @@ public class Mebel {
 
     public String toString() {
         return "Название - " + name + "цвет - " + color + "Тип - " + furnitur;
-    }
-
-    public static void main(String[] args) {
-
-        Mebel object = new Mebel();
-
-        Scanner scanner = new Scanner(System.in);
-
-        System.out.println("Введите название");
-        object.name = scanner.nextLine();
-
-
-        System.out.println("Введите цвет");
-        object.color = scanner.nextLine();
-
-        System.out.println("Введите тип");
-        object.furnitur = scanner.nextLine();
-        System.out.println(object);
     }
 
 }
